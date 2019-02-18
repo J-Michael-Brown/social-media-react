@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function AddPost(){
+function AddPost(props){
   const inputStyle = {
     padding: '10px',
     color: 'gray',
@@ -29,11 +30,15 @@ function AddPost(){
     <div>
       <form>
         <input style={inputStyle} placeholder="What's happening?"></input>
-        <button style={buttonStyle}>Tweet</button>
+        <button style={buttonStyle} onClick={props.hideTweet}>Tweet</button>
         <hr style= {lineColor}/>
       </form>
     </div>
   )
+}
+
+AddPost.propTypes = {
+  hideTweet: PropTypes.func
 }
 
 export default AddPost;

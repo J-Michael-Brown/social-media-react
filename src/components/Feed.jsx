@@ -1,5 +1,5 @@
 import React from 'react';
-import AddPost from './AddPost';
+import PostControl from './PostControl';
 import RecentPosts from './RecentPosts'
 
 function Feed(){
@@ -16,7 +16,7 @@ function Feed(){
   }
   return (
     <div style={feedStyle}>
-      <AddPost/>
+      <PostControl/>
       <RecentPosts/>
     </div>
   )

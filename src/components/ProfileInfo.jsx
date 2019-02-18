@@ -1,4 +1,5 @@
 import React from 'react';
+import { Profile } from '../assets/profile'
 
 function ProfileInfo(){
   const styledProfileInfoTop = {
@@ -32,7 +33,7 @@ function ProfileInfo(){
   return (
     <div style={styledProfileInfoTop}>
       <img style= {imageStyle} src='http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png'></img>
-      <h1>John Alice</h1>
+      <h1>{Profile.name}</h1>
       <hr style={lineColor}/>
         <div style={styledProfileInfoBottom}>
           <h3>Tweets</h3>
