@@ -46,7 +46,7 @@ class Feed extends React.Component {
     return (
       <div style={feedStyle}>
         <PostControl addPost={this.addPost}/>
-        <RecentPosts recentPostFeed={this.state.recentPostFeed}/>
+        <RecentPosts recentPostFeed={this.state.recentPostFeed} toggleLikieness={this.toggleLikieness}/>
       </div>
     );
   }

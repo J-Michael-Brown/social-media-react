@@ -51,7 +51,7 @@ function AddPost(props){
       <input
         type='text'
         id='content'
-        placeholder='Pair Names'
+        placeholder='Whats happening?'
         ref={(input) => {_content = input;}}/>
 
         <button style={buttonStyle} type='submit'>Tweet</button>
