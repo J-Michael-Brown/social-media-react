@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import { Profile } from '../assets/profile'
+import { v4 } from 'uuid'
+
 
 function AddPost(props){
+  let _content = null;
+
   const inputStyle = {
     padding: '10px',
     color: 'gray',
@@ -10,6 +15,20 @@ function AddPost(props){
     marginTop: '15px',
     width: '200px',
     marginBottom: '10px'
+  }
+
+  function createPost(event){
+    event.preventDefault();
+    props.hideTweet();
+    props.addPost({
+      image: Profile.image,
+      username: Profile.username,
+      content: _content.value,
+      handle: Profile.handle,
+      postId: v4(),
+      likieness: false
+    });
+    _content.value = '';
   }
 
   const lineColor = {
@@ -28,9 +47,15 @@ function AddPost(props){
   }
   return (
     <div>
-      <form>
-        <input style={inputStyle} placeholder="What's happening?"></input>
-        <button style={buttonStyle} onClick={props.hideTweet}>Tweet</button>
+    <form onSubmit={createPost}>
+      <input
+        type='text'
+        id='content'
+        placeholder='Pair Names'
+        ref={(input) => {_content = input;}}/>
+
+        <button style={buttonStyle} type='submit'>Tweet</button>
+
         <hr style= {lineColor}/>
       </form>
     </div>
@@ -38,7 +63,8 @@ function AddPost(props){
 }
 
 AddPost.propTypes = {
-  hideTweet: PropTypes.func
+  hideTweet: PropTypes.func,
+  addPost: PropTypes.func
 }
 
 export default AddPost;

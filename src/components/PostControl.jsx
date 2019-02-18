@@ -1,5 +1,6 @@
 import React from 'react';
 import AddPost from './AddPost'
+import PropTypes from 'prop-types';
 
 const buttonStyle = {
   padding: '10px',
@@ -31,20 +32,23 @@ class PostControl extends React.Component {
     this.setState({formVisible: false})
   }
 
-
   render(){
-      let currentVisibleContent = null;
-      if (this.state.formVisible) {
-        currentVisibleContent = <AddPost hideTweet={this.hideTweetForm}/>
-      } else {
-        currentVisibleContent = <button style={buttonStyle} onClick={this.showTweetForm}>Tweet</button>
-      }
-      return(
-        <div>
-          {currentVisibleContent}
-        </div>
+    let currentVisibleContent = null;
+    if (this.state.formVisible) {
+      currentVisibleContent = <AddPost hideTweet={this.hideTweetForm} addPost={this.props.addPost}/>
+    } else {
+      currentVisibleContent = <button style={buttonStyle} onClick={this.showTweetForm}>Tweet</button>
+    }
+    return(
+      <div>
+        {currentVisibleContent}
+      </div>
     );
   }
+}
+
+PostControl.propTypes = {
+  addPost: PropTypes.func
 }
 
 export default PostControl;
