@@ -9,7 +9,7 @@ function ProfilePage(){
     textAlign: 'center',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
-    margin: '30'
+    margin: '30px'
   }
 
   return(

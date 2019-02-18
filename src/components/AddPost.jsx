@@ -2,13 +2,13 @@ import React from 'react';
 
 function AddPost(){
   const inputStyle = {
-    padding: '10',
+    padding: '10px',
     color: 'gray',
-    borderRadius: '5',
+    borderRadius: '5px',
     borderStyle: 'none',
-    marginTop: '15',
-    width: '200',
-    marginBottom: '10'
+    marginTop: '15px',
+    width: '200px',
+    marginBottom: '10px'
   }
 
   const lineColor = {
@@ -16,14 +16,14 @@ function AddPost(){
   }
 
   const buttonStyle = {
-    padding: '10',
+    padding: '10px',
     fontFamily: 'helvetica',
     backgroundColor: '#ffa900',
     borderStyle: 'none',
-    margin: '5',
+    margin: '5px',
     color: 'white',
     width: '75px',
-    borderRadius: '5'
+    borderRadius: '5px'
   }
   return (
     <div>

@@ -4,7 +4,7 @@ import Search from './Search';
 
 function Header(){
   let headerStyle = {
-    padding: '30',
+    padding: '30px',
     display: 'grid',
     gridTemplateColumns: '5fr 1fr'
   }

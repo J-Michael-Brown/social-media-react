@@ -3,9 +3,9 @@ import React from 'react';
 function Bio(){
   const styledBio = {
     backgroundColor: '#303030',
-    padding: '20',
+    padding: '20px',
     textAlign: 'left',
-    margin: '30',
+    margin: '30px',
     color: 'white',
     fontFamily: 'helvetica',
     borderStyle: 'solid',

@@ -2,13 +2,13 @@ import React from 'react';
 
 function Navbar(){
   const buttonStyle = {
-    padding: '15',
+    padding: '15px',
     fontFamily: 'helvetica',
     backgroundColor: '#ffa900',
     borderStyle: 'none',
-    margin: '5',
+    margin: '5px',
     color: 'white',
-    width: '130'
+    width: '130px'
   }
   return (
     <div>

@@ -3,10 +3,10 @@ import React from 'react';
 function ProfileInfo(){
   const styledProfileInfoTop = {
     backgroundColor: '#303030',
-    margin: '30',
+    margin: '30px',
     color: 'white',
     fontFamily: 'helvetica',
-    padding: '10',
+    padding: '10px',
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .02)',
     borderRadius: '3px'
@@ -26,7 +26,7 @@ function ProfileInfo(){
   const imageStyle = {
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .2)',
-    width: '100',
+    width: '100px',
     borderRadius: '50%'
   }
   return (

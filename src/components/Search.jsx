@@ -2,18 +2,18 @@ import React from 'react';
 
 function Search(){
   const inputStyle = {
-    padding: '10',
+    padding: '10px',
     color: 'gray',
-    borderRadius: '5',
+    borderRadius: '5px',
     borderStyle: 'none',
-    marginTop: '15',
-    width: '200',
-    marginRight: '20'
+    marginTop: '15px',
+    width: '200px',
+    marginRight: '20px'
   }
   return (
     <div>
       <form>
-        <input value="Search" style={inputStyle}></input>
+        <input placeholder="Search" style={inputStyle}></input>
       </form>
     </div>
   )

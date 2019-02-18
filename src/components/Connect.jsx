@@ -4,11 +4,11 @@ import ConnectionList from './ConnectionList';
 function Connect(){
   const styledConnect = {
     backgroundColor: '#303030',
-    margin: '30',
+    margin: '30px',
     color: 'white',
     fontFamily: 'helvetica',
     height: '100%',
-    padding: '10',
+    padding: '10px',
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .02)',
     borderRadius: '3px'

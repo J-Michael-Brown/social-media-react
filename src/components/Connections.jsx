@@ -9,33 +9,33 @@ function Connections({image, username, handle}){
   }
 
   const imageStyle = {
-    margin: '15',
-    width: '75',
+    margin: '15px',
+    width: '75px',
     borderRadius: '50%',
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .3)'
   }
 
   const buttonStyle = {
-    padding: '10',
+    padding: '10px',
     fontFamily: 'helvetica',
     backgroundColor: '#ffa900',
     borderStyle: 'none',
-    margin: '5',
+    margin: '5px',
     color: 'white',
-    width: '125',
+    width: '125px',
   }
 
   const usernameStyle = {
-    fontSize: '22',
-    marginBottom: '5',
+    fontSize: '22px',
+    marginBottom: '5px',
     fontWeight: 'bold'
   }
 
   const handleStyle = {
     fontWeight: 'lighter',
-    fontSize: '16',
-    marginBottom: '5',
+    fontSize: '16px',
+    marginBottom: '5px',
     color: 'gray'
   }
 
