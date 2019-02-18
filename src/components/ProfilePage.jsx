@@ -1,8 +1,7 @@
 import React from 'react';
-import ProfileInfo from './ProfileInfo';
-import Bio from './Bio';
 import Connect from './Connect';
 import Feed from './Feed';
+import Profile from './Profile';
 
 function ProfilePage(){
   const styledProfilePage = {
@@ -14,10 +13,7 @@ function ProfilePage(){
 
   return(
     <div style={styledProfilePage}>
-      <div>
-        <ProfileInfo/>
-        <Bio/>
-      </div>
+      <Profile/>
       <Feed/>
       <Connect/>
     </div>
