@@ -9,14 +9,14 @@ function Search(){
     marginTop: '15px',
     width: '200px',
     marginRight: '20px'
-  }
+  };
   return (
     <div>
       <form>
         <input placeholder="Search" style={inputStyle}></input>
       </form>
     </div>
-  )
+  );
 }
 
 export default Search;

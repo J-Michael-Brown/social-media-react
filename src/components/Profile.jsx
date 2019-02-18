@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileInfo from './ProfileInfo'
+import ProfileInfo from './ProfileInfo';
 import Bio from './Bio';
 
 function Profile() {
@@ -8,7 +8,7 @@ function Profile() {
       <ProfileInfo/>
       <Bio/>
     </div>
-  )
+  );
 }
 
 export default Profile;

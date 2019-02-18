@@ -1,5 +1,5 @@
 import React from 'react';
-import Connections from './Connections'
+import Connections from './Connections';
 
 function ConnectionList(){
   return (
@@ -17,7 +17,7 @@ function ConnectionList(){
         username="mastermind5"
         handle="@mastermind5"/>
     </div>
-  )
+  );
 }
 
 export default ConnectionList;

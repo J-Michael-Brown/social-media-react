@@ -7,7 +7,7 @@ function Header(){
     padding: '30px',
     display: 'grid',
     gridTemplateColumns: '5fr 1fr'
-  }
+  };
   return (
     <div>
       <div style={headerStyle}>

@@ -9,7 +9,7 @@ function ProfilePage(){
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     margin: '30px'
-  }
+  };
 
   return(
     <div style={styledProfilePage}>
@@ -17,7 +17,7 @@ function ProfilePage(){
       <Feed/>
       <Connect/>
     </div>
-  )
+  );
 
 }
 

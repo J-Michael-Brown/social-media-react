@@ -6,19 +6,18 @@ import PropTypes from 'prop-types';
 function RecentPosts(props) {
   return (
     <div>
-    {props.recentPostFeed.map((post) =>
-      <Post
-      image = {post.image}
-      username = {post.username}
-      content = {post.content}
-      handle = {post.handle}
-      postId = {post.postId}
-      likieness = {post.likieness}
-      onLike = {this.toggleLikieness}
-      key = {v4()}
-      onLike = {props.toggleLikieness}
-      />
-    )}
+      {props.recentPostFeed.map((post) =>
+        <Post
+          image = {post.image}
+          username = {post.username}
+          content = {post.content}
+          handle = {post.handle}
+          postId = {post.postId}
+          likieness = {post.likieness}
+          onLike = {this.toggleLikieness}
+          key = {v4()}
+        />
+      )}
     </div>
   );
 }
@@ -26,6 +25,6 @@ function RecentPosts(props) {
 RecentPosts.propTypes = {
   recentPostFeed: PropTypes.array,
   toggleLikieness: PropTypes.func
-}
+};
 
 export default RecentPosts;

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import FavoriteButton from './FavoriteButton';
 import Likieness from './Likieness';
 
@@ -7,7 +7,7 @@ const feedGrid = {
   display: 'grid',
   gridTemplateColumns: '1fr 3fr',
   textAlign: 'left',
-}
+};
 
 const imageStyle = {
   margin: '15px',
@@ -15,30 +15,29 @@ const imageStyle = {
   borderRadius: '50%',
   borderStyle: 'solid',
   borderColor: 'rgba(255, 255, 255, .2)'
-}
+};
 
 const lineColor = {
   borderColor: '#303030'
-}
+};
 
 const usernameStyle = {
   fontSize: '22px',
   marginBottom: '0',
   fontWeight: 'bold',
-}
+};
 
 const handleStyle = {
   fontWeight: 'lighter',
   fontSize: '16px',
   marginBottom: '5px',
   color: 'gray',
-  marginBottom: '0px'
-}
+};
 
 const paragraphStyle = {
   fontWeight: 'lighter',
   marginTop: '6px'
-}
+};
 
 function Post(props) {
   return (

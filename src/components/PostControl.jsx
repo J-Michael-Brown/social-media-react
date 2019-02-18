@@ -1,5 +1,5 @@
 import React from 'react';
-import AddPost from './AddPost'
+import AddPost from './AddPost';
 import PropTypes from 'prop-types';
 
 const buttonStyle = {
@@ -11,7 +11,7 @@ const buttonStyle = {
   color: 'white',
   width: '75px',
   borderRadius: '5px'
-}
+};
 
 class PostControl extends React.Component {
 
@@ -19,25 +19,25 @@ class PostControl extends React.Component {
     super(props);
     this.state = {
       formVisible: false
-    }
+    };
     this.showTweetForm = this.showTweetForm.bind(this);
     this.hideTweetForm = this.hideTweetForm.bind(this);
   }
 
   showTweetForm(){
-    this.setState({formVisible: true})
+    this.setState({formVisible: true});
   }
 
   hideTweetForm(){
-    this.setState({formVisible: false})
+    this.setState({formVisible: false});
   }
 
   render(){
     let currentVisibleContent = null;
     if (this.state.formVisible) {
-      currentVisibleContent = <AddPost hideTweet={this.hideTweetForm} addPost={this.props.addPost}/>
+      currentVisibleContent = <AddPost hideTweet={this.hideTweetForm} addPost={this.props.addPost}/>;
     } else {
-      currentVisibleContent = <button style={buttonStyle} onClick={this.showTweetForm}>Tweet</button>
+      currentVisibleContent = <button style={buttonStyle} onClick={this.showTweetForm}>Tweet</button>;
     }
     return(
       <div>
@@ -49,6 +49,6 @@ class PostControl extends React.Component {
 
 PostControl.propTypes = {
   addPost: PropTypes.func
-}
+};
 
 export default PostControl;

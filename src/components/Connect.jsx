@@ -12,18 +12,18 @@ function Connect(){
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .02)',
     borderRadius: '3px'
-  }
+  };
 
   const lineColor = {
     borderColor: '#303030'
-  }
+  };
   return (
     <div style={styledConnect}>
       <h3>People you may know: </h3>
       <hr style={lineColor}/>
-        <ConnectionList/>
+      <ConnectionList/>
     </div>
-  )
+  );
 }
 
 export default Connect;

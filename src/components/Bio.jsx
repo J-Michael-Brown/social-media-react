@@ -1,5 +1,5 @@
 import React from 'react';
-import { Profile } from '../assets/profile.js'
+import { Profile } from '../assets/profile.js';
 
 function Bio(){
   const styledBio = {
@@ -14,13 +14,13 @@ function Bio(){
     borderRadius: '3px',
     fontWeight: 'lighter'
 
-  }
+  };
 
   return (
     <div style={styledBio}>
       <p>{Profile.bio}</p>
     </div>
-  )
+  );
 }
 
 export default Bio;

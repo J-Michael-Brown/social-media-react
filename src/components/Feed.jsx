@@ -1,6 +1,6 @@
 import React from 'react';
 import PostControl from './PostControl';
-import RecentPosts from './RecentPosts'
+import RecentPosts from './RecentPosts';
 
 const feedStyle = {
   backgroundColor: '#303030',
@@ -12,7 +12,7 @@ const feedStyle = {
   borderStyle: 'solid',
   borderColor: 'rgba(255, 255, 255, .02)',
   borderRadius: '3px'
-}
+};
 
 class Feed extends React.Component {
 
@@ -36,7 +36,6 @@ class Feed extends React.Component {
   }
 
   addPost(post) {
-    console.log(this.state);
     let newRecentPostFeed = this.state.recentPostFeed.slice();
     newRecentPostFeed.push(post);
     this.setState({recentPostFeed: newRecentPostFeed});

@@ -6,7 +6,7 @@ function Connections({image, username, handle}){
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
     textAlign: 'left',
-  }
+  };
 
   const imageStyle = {
     margin: '15px',
@@ -14,7 +14,7 @@ function Connections({image, username, handle}){
     borderRadius: '50%',
     borderStyle: 'solid',
     borderColor: 'rgba(255, 255, 255, .3)'
-  }
+  };
 
   const buttonStyle = {
     padding: '10px',
@@ -24,20 +24,20 @@ function Connections({image, username, handle}){
     margin: '5px',
     color: 'white',
     width: '125px',
-  }
+  };
 
   const usernameStyle = {
     fontSize: '22px',
     marginBottom: '5px',
     fontWeight: 'bold'
-  }
+  };
 
   const handleStyle = {
     fontWeight: 'lighter',
     fontSize: '16px',
     marginBottom: '5px',
     color: 'gray'
-  }
+  };
 
   return (
     <div>
@@ -49,7 +49,7 @@ function Connections({image, username, handle}){
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 Connections.propTypes = {

@@ -9,14 +9,14 @@ function Navbar(){
     margin: '5px',
     color: 'white',
     width: '130px'
-  }
+  };
   return (
     <div>
       <button style={buttonStyle}>Home</button>
       <button style={buttonStyle}>Notifications</button>
       <button style={buttonStyle}>Messages</button>
     </div>
-  )
+  );
 }
 
 export default Navbar;
