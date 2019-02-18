@@ -28,7 +28,7 @@ function AddPost(){
   return (
     <div>
       <form>
-        <input style={inputStyle} value="What's happening?"></input>
+        <input style={inputStyle} placeholder="What's happening?"></input>
         <button style={buttonStyle}>Tweet</button>
         <hr style= {lineColor}/>
       </form>

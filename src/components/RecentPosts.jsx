@@ -38,14 +38,13 @@ class RecentPosts extends React.Component{
   }
 
   toggleLikieness(postId) {
-    console.log('toggleLikieness function reached');
-    // let newRecentPostFeed = this.recentPostFeed.slice();
-    // for(let postIndex = 0; postIndex<newRecentPostFeed.length; postIndex++) {
-    //   if(newRecentPostFeed[postIndex].postId==postId){
-    //     newRecentPostFeed[postIndex].likieness = !newRecentPostFeed[postIndex].likieness;
-    //   }
-    // }
-    // this.setState({recentPostFeed: newRecentPostFeed});
+    let newRecentPostFeed = this.state.recentPostFeed.slice();
+    for(let postIndex = 0; postIndex<newRecentPostFeed.length; postIndex++) {
+      if(newRecentPostFeed[postIndex].postId==postId){
+        newRecentPostFeed[postIndex].likieness = !newRecentPostFeed[postIndex].likieness;
+      }
+    }
+    this.setState({recentPostFeed: newRecentPostFeed});
   }
 
   render() {

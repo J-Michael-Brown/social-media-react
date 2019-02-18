@@ -50,7 +50,7 @@ function Post(props) {
           <p style={paragraphStyle}>{props.content}</p>
         </div>
         <FavoriteButton
-          updateLikiness={props.onLike}/>
+          onLike={props.onLike} postId={props.postId}/>
         <Likieness
           likieness={props.likieness}/>
       </div>
