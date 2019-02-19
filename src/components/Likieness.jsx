@@ -2,19 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Likieness(props){
-  let message = 'false';
-  if(props.likieness) {
-    message = 'true';
-  }
+
   return(
     <div>
-      {message}
+      {props.likieness}
     </div>
   );
 }
 
 Likieness.propTypes = {
-  likieness: PropTypes.bool
+  addLikieness: PropTypes.func,
+  subtractLikieness: PropTypes.func,
+  likieness: PropTypes.number
 };
 
 export default Likieness;

@@ -5,21 +5,21 @@ import { Icon } from 'react-materialize';
 
 function FavoriteButton(props) {
 
-  function toggleLike(){
-    props.onLike(props.postId);
+  function favoritePost(){
+    props.addLikieness(props.postId);
   }
 
   return(
-    <div>
+    <div onClick={favoritePost}>
       <Icon>favorite</Icon>
-      <button onClick={toggleLike}>Like</button>
     </div>
   );
 }
 
 FavoriteButton.propTypes = {
-  onLike: PropTypes.func,
-  postId: PropTypes.string
+  postId: PropTypes.string,
+  addLikieness: PropTypes.func,
+  subtractLikieness: PropTypes.func
 };
 
 export default FavoriteButton;

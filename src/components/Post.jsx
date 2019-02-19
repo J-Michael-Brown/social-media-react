@@ -40,6 +40,7 @@ const paragraphStyle = {
 };
 
 function Post(props) {
+
   return (
     <div>
       <div style={feedGrid}>
@@ -49,7 +50,7 @@ function Post(props) {
           <p style={paragraphStyle}>{props.content}</p>
         </div>
         <FavoriteButton
-          onLike={props.onLike} postId={props.postId}/>
+          addLikieness={props.addLikieness} subtractLikieness={props.subtractLikieness} postId={props.postId}/>
         <Likieness
           likieness={props.likieness}/>
       </div>
@@ -64,8 +65,9 @@ Post.propTypes = {
   content: PropTypes.string,
   handle: PropTypes.string,
   postId: PropTypes.string,
-  likieness: PropTypes.bool,
-  onLike: PropTypes.func
+  likieness: PropTypes.number,
+  addLikieness: PropTypes.func.isRequired,
+  subtractLikieness: PropTypes.func.isRequired
 };
 
 export default Post;

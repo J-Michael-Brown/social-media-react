@@ -20,14 +20,15 @@ function AddPost(props){
   function createPost(event){
     event.preventDefault();
     props.hideTweet();
-    props.addPost({
+    let newPost = {
       image: Profile.image,
       username: Profile.username,
       content: _content.value,
       handle: Profile.handle,
       postId: v4(),
-      likieness: false
-    });
+      likieness: 0
+    };
+    props.addPost(newPost);
     _content.value = '';
   }
 

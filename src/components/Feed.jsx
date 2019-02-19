@@ -21,15 +21,26 @@ class Feed extends React.Component {
     this.state = {
       recentPostFeed: []
     };
-    this.toggleLikieness = this.toggleLikieness.bind(this);
+    this.addLikieness = this.addLikieness.bind(this);
+    this.subtractLikieness = this.subtractLikieness.bind(this);
     this.addPost = this.addPost.bind(this);
   }
 
-  toggleLikieness(postId) {
+  addLikieness(postId) {
     let newRecentPostFeed = this.state.recentPostFeed.slice();
     for(let postIndex = 0; postIndex<newRecentPostFeed.length; postIndex++) {
       if(newRecentPostFeed[postIndex].postId==postId){
-        newRecentPostFeed[postIndex].likieness = !newRecentPostFeed[postIndex].likieness;
+        newRecentPostFeed[postIndex].likieness++;
+      }
+    }
+    this.setState({recentPostFeed: newRecentPostFeed});
+  }
+
+  subtractLikieness(postId) {
+    let newRecentPostFeed = this.state.recentPostFeed.slice();
+    for(let postIndex = 0; postIndex<newRecentPostFeed.length; postIndex++) {
+      if(newRecentPostFeed[postIndex].postId==postId){
+        newRecentPostFeed[postIndex].likieness++;
       }
     }
     this.setState({recentPostFeed: newRecentPostFeed});
@@ -45,7 +56,7 @@ class Feed extends React.Component {
     return (
       <div style={feedStyle}>
         <PostControl addPost={this.addPost}/>
-        <RecentPosts recentPostFeed={this.state.recentPostFeed} toggleLikieness={this.toggleLikieness}/>
+        <RecentPosts recentPostFeed={this.state.recentPostFeed} addLikieness={this.addLikieness} subtractLikieness={this.subtractLikieness}/>
       </div>
     );
   }

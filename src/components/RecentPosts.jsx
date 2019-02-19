@@ -4,6 +4,7 @@ import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
 
 function RecentPosts(props) {
+
   return (
     <div>
       {props.recentPostFeed.map((post) =>
@@ -14,7 +15,9 @@ function RecentPosts(props) {
           handle = {post.handle}
           postId = {post.postId}
           likieness = {post.likieness}
-          onLike = {this.toggleLikieness}
+          addLikieness = {props.addLikieness}
+          subtractLikieness = {props.subtractLikieness}
+          onLike = {props.toggleLikieness}
           key = {v4()}
         />
       )}
@@ -24,7 +27,8 @@ function RecentPosts(props) {
 
 RecentPosts.propTypes = {
   recentPostFeed: PropTypes.array,
-  toggleLikieness: PropTypes.func
+  addLikieness: PropTypes.func.isRequired,
+  subtractLikieness: PropTypes.func.isRequired
 };
 
 export default RecentPosts;
